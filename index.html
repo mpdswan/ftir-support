@@ -37,11 +37,11 @@
     .hero .cta { display: inline-block; background: var(--accent); color: #fff; border-radius: 10px; padding: 12px 28px; font-weight: 700; text-decoration: none; font-size: 0.95rem; transition: opacity 0.15s; }
     .hero .cta:hover { opacity: 0.85; }
 
-    /* SCREENSHOT PLACEHOLDER */
-    .screenshot-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; padding: 0 24px 60px; max-width: 900px; margin: 0 auto; }
-    .screenshot-slot { flex: 0 0 auto; width: 200px; aspect-ratio: 9/19.5; background: var(--surface); border: 2px dashed var(--border); border-radius: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; color: var(--muted); font-size: 0.75rem; text-align: center; padding: 12px; }
-    .screenshot-slot img { width: 100%; height: 100%; object-fit: cover; border-radius: 18px; }
-    .screenshot-slot .icon { font-size: 2rem; }
+    /* SCREENSHOTS */
+    .screenshot-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 0 24px 60px; max-width: 1100px; margin: 0 auto; }
+    .screenshot-slot { border-radius: 16px; overflow: hidden; background: var(--surface); border: 1px solid var(--border); }
+    .screenshot-slot img { width: 100%; height: auto; display: block; }
+    @media (max-width: 680px) { .screenshot-row { grid-template-columns: 1fr; } }
 
     /* SECTION COMMON */
     section { max-width: 860px; margin: 0 auto; padding: 60px 24px; }
@@ -128,26 +128,11 @@
 
 <!-- SCREENSHOTS -->
 <div class="screenshot-row">
-  <div class="screenshot-slot">
-    <div class="icon">📷</div>
-    <span>Real Spectra mode</span>
-  </div>
-  <div class="screenshot-slot">
-    <div class="icon">📷</div>
-    <span>Sandbox mode</span>
-  </div>
-  <div class="screenshot-slot">
-    <div class="icon">📷</div>
-    <span>Digitiser</span>
-  </div>
-  <div class="screenshot-slot">
-    <div class="icon">📷</div>
-    <span>Peak assignments</span>
-  </div>
+  <div class="screenshot-slot"><img src="screenshots/real.png" alt="Upload. Tap. Assign. Done."></div>
+  <div class="screenshot-slot"><img src="screenshots/assignments.png" alt="It doesn't just find peaks. It tells you what they mean."></div>
+  <div class="screenshot-slot"><img src="screenshots/digitiser.png" alt="Photograph any spectrum. Instantly go digital."></div>
+  <div class="screenshot-slot"><img src="screenshots/sandbox.png" alt="Build and practise. One peak at a time."></div>
 </div>
-<!-- To add real screenshots: replace the <div class="screenshot-slot"> blocks with:
-     <div class="screenshot-slot"><img src="screenshots/screenshot1.png" alt="Real Spectra mode"></div>
-     and place your images in a screenshots/ folder -->
 
 <!-- HOW IT WORKS -->
 <section id="how-it-works">
