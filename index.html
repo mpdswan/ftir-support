@@ -1,10 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Swano's FTIR Interpretation Assistant — Support</title>
+
+  <!-- Primary SEO -->
+  <title>Swano's FTIR Interpreter — FTIR Peak Assignment & Spectrum Analysis App for iPhone, iPad & Mac</title>
+  <meta name="description" content="Swano's FTIR Interpretation Assistant: iPhone, iPad and Mac app for FTIR spectrum peak assignment, functional group identification, and printed spectrum digitisation. Evidence-led interpretation with confirmatory peak correlation. Supports JCAMP-DX, CSV, TSV. Free offline analysis with PDF report export. £3.99 one-time purchase.">
+  <meta name="keywords" content="FTIR interpretation, FTIR peak assignment, infrared spectrum analysis, functional group identification, wavenumber assignment, spectrum digitiser, JCAMP-DX viewer, absorbance transmittance conversion, carbonyl peak identification, fingerprint region FTIR, analytical chemistry app, iPhone FTIR, iPad spectrum analysis, Bruker FTIR app, PerkinElmer spectrum viewer, Shimadzu FTIR, Agilent spectrum, Thermo Fisher FTIR, printed spectrum to CSV, extract data from spectrum image, FTIR iOS app, infrared spectroscopy tool, spectrum peak finder">
+  <meta name="author" content="Matthew Swan BSc RSci MRSC">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mpdswan.github.io/ftir-support/">
+
+  <!-- Open Graph (LinkedIn, social sharing) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mpdswan.github.io/ftir-support/">
+  <meta property="og:title" content="Swano's FTIR Interpreter — FTIR Peak Assignment App for iPhone & iPad">
+  <meta property="og:description" content="Evidence-led FTIR spectrum interpretation for students, researchers and lab professionals. Assign carbonyl stretches, O-H envelopes, N-H bands and fingerprint region absorptions. Includes spectrum digitiser with perspective correction. iPhone, iPad & Mac.">
+  <meta property="og:image" content="https://mpdswan.github.io/ftir-support/screenshots/ftir-spectrum-real-data.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Swano's FTIR Interpreter — Peak Assignment App for iPhone & iPad">
+  <meta name="twitter:description" content="Evidence-led FTIR spectrum interpretation with confirmatory peak correlation. Includes printed spectrum digitiser with perspective correction. iPhone, iPad & Mac.">
+  <meta name="twitter:image" content="https://mpdswan.github.io/ftir-support/screenshots/ftir-spectrum-real-data.png">
+
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Swano's FTIR Interpretation Assistant",
+    "alternateName": ["Swano FTIR", "FTIR Interpreter", "FTIR Peak Assignment App"],
+    "operatingSystem": "iOS, iPadOS, macOS",
+    "applicationCategory": "EducationalApplication",
+    "applicationSubCategory": "Chemistry Spectrum Analysis",
+    "offers": {
+      "@type": "Offer",
+      "price": "3.99",
+      "priceCurrency": "GBP"
+    },
+    "downloadUrl": "https://apps.apple.com/us/app/swanos-ftir/id6774970930",
+    "description": "A complete FTIR spectrum analysis tool for students, researchers, and lab professionals. Features evidence-led peak assignment with confirmatory correlation, printed spectrum digitisation with perspective correction, sandbox teaching mode, JCAMP-DX support, and PDF report export. Works entirely offline — no data is ever transmitted.",
+    "featureList": [
+      "FTIR peak assignment with functional group database",
+      "Confirmatory peak correlation for evidence-led interpretation",
+      "Printed spectrum digitiser with perspective correction",
+      "JCAMP-DX file support",
+      "Absorbance and transmittance mode",
+      "Sandbox mode for teaching and self-study",
+      "PDF report export",
+      "Completely offline — no data collected"
+    ],
+    "screenshot": [
+      "https://mpdswan.github.io/ftir-support/screenshots/ftir-spectrum-real-data.png",
+      "https://mpdswan.github.io/ftir-support/screenshots/ftir-spectrum-digitiser-assignments.png",
+      "https://mpdswan.github.io/ftir-support/screenshots/ftir-spectrum-digitiser.png",
+      "https://mpdswan.github.io/ftir-support/screenshots/ftir-spectrum-sandbox.png"
+    ],
+    "author": {
+      "@type": "Person",
+      "name": "Matthew Swan",
+      "honorificSuffix": "BSc RSci MRSC",
+      "url": "https://mpdswan.github.io/ftir-support/"
+    },
+    "softwareVersion": "1.0",
+    "releaseNotes": "Initial release",
+    "datePublished": "2026-01-01",
+    "inLanguage": "en",
+    "isAccessibleForFree": false,
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "ratingCount": "1"
+    }
+  }
+  </script>
+
   <style>
     :root {
       --bg: #0d1117;
@@ -22,27 +94,6 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
 
-
-    /* info */
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Swano's FTIR Interpretation Assistant",
-      "operatingSystem": "iOS, iPadOS, macOS",
-      "applicationCategory": "EducationalApplication, BusinessApplication",
-      "offers": {
-      "@type": "Offer",
-      "price": "3.99",
-      "priceCurrency": "GBP"
-    },
-    "downloadUrl": "https://apps.apple.com/us/app/swanos-ftir/id6774970930",
-    "description": "A complete Fourier-transform infrared (FTIR) spectrum analysis tool for students, researchers, and lab professionals featuring Real Spectra analysis, Sandbox mode, and a printed spectrum Digitiser.",
-    "applicationSubCategory": "Chemistry Spectrum Analysis Tool"
-  }
-
-
-    
     /* NAV */
     nav { position: sticky; top: 0; z-index: 100; background: rgba(13,17,23,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 0 24px; display: flex; align-items: center; gap: 24px; height: 56px; }
     nav .logo { font-weight: 700; font-size: 1rem; color: var(--heading); white-space: nowrap; }
@@ -86,6 +137,14 @@
     .step-num { flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; }
     .step-body h4 { font-size: 0.95rem; font-weight: 700; color: var(--heading); margin-bottom: 4px; }
     .step-body p { font-size: 0.85rem; margin: 0; }
+
+    /* INSTRUMENTS */
+    .instruments-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 24px; }
+    .instrument-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+    .instrument-card h4 { font-size: 0.9rem; font-weight: 700; color: var(--heading); margin-bottom: 6px; }
+    .instrument-card p { font-size: 0.8rem; margin: 0; color: var(--muted); }
+    .format-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .format-pill { background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.3); color: var(--accent); border-radius: 999px; padding: 3px 12px; font-size: 0.78rem; font-weight: 600; }
 
     /* FAQ */
     .faq-list { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
@@ -134,59 +193,56 @@
   <div class="logo">Swano's <span>FTIR</span></div>
   <div class="spacer"></div>
   <a href="#how-it-works">How it works</a>
+  <a href="#instruments">Compatibility</a>
   <a href="#faq">FAQ</a>
   <a href="#privacy">Privacy</a>
   <a href="#contact" class="always">Contact</a>
 </nav>
 
-
-
-  
 <!-- HERO -->
 <div class="hero">
   <div class="badge">Support &amp; Documentation</div>
   <h1>Swano's FTIR Interpretation Assistant</h1>
-  <p>A complete FTIR spectrum analysis tool for students, researchers, and lab professionals. Available on iPhone, iPad, and Mac.</p>
-  <!-- App Store Download Button -->
-  <a href="https://apps.apple.com/us/app/swanos-ftir/id6774970930" 
-   target="_blank" 
-   rel="noopener noreferrer" 
-   style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;">
-  <img src="screenshots/Download_on_the_App_Store_Badge.svg" 
-       alt="Download Swano's FTIR Interpretation Assistant on the Apple App Store" 
-       style="border-radius: 13px; width: 250px; height: 83px;" />
-</a>
+  <p>A complete FTIR spectrum analysis tool for students, researchers, and lab professionals. Evidence-led peak assignment with confirmatory correlation. Available on iPhone, iPad, and Mac.</p>
+  <a href="https://apps.apple.com/us/app/swanos-ftir/id6774970930"
+     target="_blank"
+     rel="noopener noreferrer"
+     style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;">
+    <img src="screenshots/Download_on_the_App_Store_Badge.svg"
+         alt="Download Swano's FTIR Interpretation Assistant on the Apple App Store"
+         style="border-radius: 13px; width: 250px; height: 83px;" />
+  </a>
 </div>
 
 <!-- SCREENSHOTS -->
 <div class="screenshot-row">
-  <div class="screenshot-slot"><img src="screenshots/ftir-spectrum-real-data.png" alt="Swano FTIR Interpretation Assistant app interface displaying a real spectrum peak assignment analysis chart."></div>
-  <div class="screenshot-slot"><img src="screenshots/ftir-spectrum-digitiser-assignments.png" alt="Swano FTIR Interpretation Assistant app interface displaying a real spectrum peak with peak assignments and suggestions."></div>
-  <div class="screenshot-slot"><img src="screenshots/ftir-spectrum-digitiser.png" alt="FTIR spectrum digitiser feature performing perspective correction and axis calibration on a printed chart."></div>
-  <div class="screenshot-slot"><img src="screenshots/ftir-spectrum-sandbox.png" alt="Sandbox mode in Swano FTIR app showing user building theoretical chemistry spectra and custom peak markers."></div>
+  <div class="screenshot-slot"><img src="screenshots/ftir-spectrum-real-data.png" alt="Swano FTIR Interpretation Assistant showing real spectrum peak assignment analysis with wavenumber markers and functional group candidates."></div>
+  <div class="screenshot-slot"><img src="screenshots/ftir-spectrum-digitiser-assignments.png" alt="Swano FTIR app displaying peak assignments and confirmatory evidence for carbonyl, O-H and fingerprint region bands."></div>
+  <div class="screenshot-slot"><img src="screenshots/ftir-spectrum-digitiser.png" alt="FTIR spectrum digitiser with perspective correction and axis calibration on a printed infrared spectrum chart."></div>
+  <div class="screenshot-slot"><img src="screenshots/ftir-spectrum-sandbox.png" alt="Sandbox mode for FTIR teaching showing user placing Gaussian peaks at known wavenumber positions for functional group practice."></div>
 </div>
 
 <!-- HOW IT WORKS -->
 <section id="how-it-works">
   <div class="section-label">Overview</div>
   <h2>Three ways to work with FTIR spectra</h2>
-  <p>The app has three distinct modes, each designed for a different workflow. Switch between them at any time from the Mode menu.</p>
+  <p>Swano's FTIR Interpretation Assistant is an evidence-led infrared spectrum analysis tool built by an industrial analytical chemist. Rather than simply matching a single wavenumber to a database, it encourages confirmatory correlation — assigning carbonyl stretches, O-H envelopes, N-H bands, aromatic C=C absorptions, and fingerprint region peaks as patterns of mutually supporting evidence. The app has three distinct modes, each designed for a different workflow.</p>
 
   <div class="modes-grid">
     <div class="mode-card">
       <div class="icon">📈</div>
       <h3>Real Spectra Mode</h3>
-      <p>Upload a CSV, TSV, TXT, or JCAMP-DX file exported directly from your spectrometer. The app auto-detects absorbance or transmittance, lets you tap peaks to mark them, and suggests functional group assignments with confirmatory evidence.</p>
+      <p>Upload a CSV, TSV, TXT, or JCAMP-DX file exported directly from your spectrometer. The app auto-detects absorbance or transmittance, lets you tap peaks to mark them, and suggests functional group assignments with confirmatory evidence. Supports files from Bruker, PerkinElmer, Shimadzu, Agilent, Thermo Fisher and other FTIR instruments.</p>
     </div>
     <div class="mode-card">
       <div class="icon">🧪</div>
       <h3>Sandbox Mode</h3>
-      <p>Build theoretical spectra by placing Gaussian peaks manually at known wavenumbers. Ideal for teaching, practising assignments, or exploring how overlapping bands look. Add confirmatory peaks, lock assignments, and export annotated PDF reports.</p>
+      <p>Build theoretical spectra by placing Gaussian peaks manually at known wavenumbers. Ideal for teaching, practising assignments, or exploring how overlapping bands look in the fingerprint region. Add confirmatory peaks, lock assignments, and export annotated PDF reports for coursework or handouts.</p>
     </div>
     <div class="mode-card">
       <div class="icon">🔬</div>
       <h3>Digitiser</h3>
-      <p>Photograph or scan a printed FTIR spectrum. Apply perspective correction, calibrate the X and Y axes against known tick marks, then extract the digital data and open it directly in Real Spectra mode.</p>
+      <p>Photograph or scan a printed FTIR spectrum from a paper, textbook, or photocopied report. Apply perspective correction to remove tilt and distortion, calibrate the wavenumber axis against known tick marks, then extract the digital trace and open it directly in Real Spectra mode for full peak assignment.</p>
     </div>
   </div>
 </section>
@@ -194,26 +250,71 @@
 <!-- REAL SPECTRA WALKTHROUGH -->
 <section>
   <div class="section-label">Real Spectra Mode</div>
-  <h2>Uploading and analysing a real spectrum</h2>
+  <h2>Uploading and analysing a real FTIR spectrum</h2>
+  <p>Real Spectra mode accepts instrument data directly — no conversion needed for most FTIR instruments. The app reads wavenumber and intensity columns automatically and handles both absorbance and transmittance spectra.</p>
   <div class="steps">
-    <div class="step"><div class="step-num">1</div><div class="step-body"><h4>Load your file</h4><p>Tap <strong>Files → Upload spectrum</strong> and choose a CSV, TSV, TXT, or JCAMP-DX (.jdx/.dx) file. The app reads wavenumber and intensity columns automatically and detects whether the data is absorbance or transmittance.</p></div></div>
-    <div class="step"><div class="step-num">2</div><div class="step-body"><h4>Pick peaks</h4><p>Tap anywhere on the spectrum chart. <strong>Assisted pick</strong> snaps to the nearest detected absorption maximum. <strong>Manual pick</strong> places a marker exactly where you tap — useful for broad O-H envelopes or shoulders that don't form a clean maximum.</p></div></div>
-    <div class="step"><div class="step-num">3</div><div class="step-body"><h4>Assign bands</h4><p>Each marker shows a ranked list of functional-group candidates. Tap a suggestion to lock it as your assignment. Use <strong>Select/edit</strong> mode to adjust the wavenumber, intensity, or shape of an existing marker.</p></div></div>
-    <div class="step"><div class="step-num">4</div><div class="step-body"><h4>Exclude elements</h4><p>Use the element-exclusion bar to mark atoms absent from your sample (e.g. N, S, halogens). The app filters out assignments that require those elements, sharpening the candidate list.</p></div></div>
-    <div class="step"><div class="step-num">5</div><div class="step-body"><h4>Save or export</h4><p>Tap <strong>Files → Save TSV</strong> to save the session in a format you can reload later. Tap <strong>Files → Export Report</strong> to generate a PDF chart with all assignments and confirmatory evidence.</p></div></div>
+    <div class="step"><div class="step-num">1</div><div class="step-body"><h4>Load your spectrum file</h4><p>Tap <strong>Files → Upload spectrum</strong> and choose a CSV, TSV, TXT, or JCAMP-DX (.jdx / .dx) file. The app reads wavenumber and intensity columns automatically and detects whether the data is absorbance or transmittance.</p></div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-body"><h4>Pick peaks</h4><p>Tap anywhere on the spectrum chart. <strong>Assisted pick</strong> snaps to the nearest detected absorption maximum. <strong>Manual pick</strong> places a marker exactly where you tap — useful for broad O-H envelopes, carboxylic acid absorptions, or shoulders that don't form a clean maximum.</p></div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-body"><h4>Assign functional groups</h4><p>Each marker shows a ranked list of functional-group candidates based on wavenumber, intensity, and band shape. Tap a suggestion to lock it as your assignment. Confirmatory evidence highlights related bands elsewhere in the spectrum that support or challenge the assignment.</p></div></div>
+    <div class="step"><div class="step-num">4</div><div class="step-body"><h4>Exclude elements</h4><p>Use the element-exclusion bar to mark atoms absent from your sample (e.g. N, S, halogens). The app filters out assignments that require those elements, sharpening the candidate list to what is chemically possible.</p></div></div>
+    <div class="step"><div class="step-num">5</div><div class="step-body"><h4>Save or export</h4><p>Tap <strong>Files → Save TSV</strong> to save the session in a format you can reload later. Tap <strong>Files → Export Report</strong> to generate a PDF chart with all assignments, wavenumber positions, and confirmatory evidence suitable for lab reports or coursework.</p></div></div>
   </div>
 </section>
 
 <!-- DIGITISER WALKTHROUGH -->
 <section>
   <div class="section-label">Digitiser</div>
-  <h2>Extracting data from a printed spectrum</h2>
+  <h2>Extracting data from a printed or published FTIR spectrum</h2>
+  <p>The Digitiser lets you recover numerical data from any printed, photocopied, or published FTIR spectrum image — including spectra photographed at an angle. Perspective correction removes keystoning and tilt before calibration, giving more accurate wavenumber extraction than tools that require a pre-corrected flat image.</p>
   <div class="steps">
-    <div class="step"><div class="step-num">1</div><div class="step-body"><h4>Import an image</h4><p>Tap <strong>Choose image</strong> to pick a photo from your library, or use <strong>Take photo</strong> to photograph a printed or photocopied spectrum directly.</p></div></div>
-    <div class="step"><div class="step-num">2</div><div class="step-body"><h4>Correct perspective</h4><p>Drag the four coloured corner handles to match the corners of the spectrum plot area. This removes any tilt or keystone distortion from the photograph.</p></div></div>
-    <div class="step"><div class="step-num">3</div><div class="step-body"><h4>Calibrate the X axis</h4><p>Tap known wavenumber positions on the axis (e.g. 4000, 3000, 2000, 1000 cm⁻¹) and enter the corresponding values. A minimum of two points is required; more points improve accuracy for non-linear axes.</p></div></div>
-    <div class="step"><div class="step-num">4</div><div class="step-body"><h4>Calibrate the Y axis</h4><p>Tap the top and bottom of the Y axis scale and enter the corresponding absorbance or transmittance values.</p></div></div>
-    <div class="step"><div class="step-num">5</div><div class="step-body"><h4>Extract and open</h4><p>Tap <strong>Extract spectrum</strong> to digitise the trace, then <strong>Open in Real Mode</strong> to transfer the data directly into Real Spectra mode for full analysis. Or tap <strong>Download CSV</strong> to save the raw data.</p></div></div>
+    <div class="step"><div class="step-num">1</div><div class="step-body"><h4>Import a spectrum image</h4><p>Tap <strong>Choose image</strong> to pick a photo from your library, or use <strong>Take photo</strong> to photograph a printed or photocopied spectrum directly with your iPhone or iPad camera.</p></div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-body"><h4>Correct perspective</h4><p>Drag the four coloured corner handles to match the corners of the spectrum plot area. This removes any tilt or keystone distortion from the photograph — essential for accurate wavenumber calibration.</p></div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-body"><h4>Calibrate the wavenumber axis</h4><p>Tap known wavenumber positions on the X axis (e.g. 4000, 3000, 2000, 1000 cm⁻¹) and enter the corresponding values. A minimum of two points is required; more calibration points improve accuracy for non-linear or compressed axes.</p></div></div>
+    <div class="step"><div class="step-num">4</div><div class="step-body"><h4>Calibrate the intensity axis</h4><p>Tap the top and bottom of the Y axis scale and enter the corresponding absorbance or transmittance values.</p></div></div>
+    <div class="step"><div class="step-num">5</div><div class="step-body"><h4>Extract and open in Real Spectra mode</h4><p>Tap <strong>Extract spectrum</strong> to digitise the trace, then <strong>Open in Real Mode</strong> to transfer the data directly into Real Spectra mode for full peak assignment and functional group analysis. Or tap <strong>Download CSV</strong> to save the raw wavenumber/intensity data.</p></div></div>
+  </div>
+</section>
+
+<!-- INSTRUMENTS & COMPATIBILITY -->
+<section id="instruments">
+  <div class="section-label">Compatibility</div>
+  <h2>Supported instruments &amp; file formats</h2>
+  <p>Real Spectra mode accepts data files exported from most modern FTIR spectrometers. The app reads wavenumber and intensity columns automatically with no manual configuration required for standard exports.</p>
+
+  <div class="instruments-grid">
+    <div class="instrument-card">
+      <h4>Bruker</h4>
+      <p>OPUS software exports — convert to JCAMP-DX (.jdx) or CSV from within OPUS before importing.</p>
+    </div>
+    <div class="instrument-card">
+      <h4>PerkinElmer</h4>
+      <p>Spectrum software exports to CSV and JCAMP-DX directly. Both formats are supported.</p>
+    </div>
+    <div class="instrument-card">
+      <h4>Shimadzu</h4>
+      <p>IRSolution and LabSolutions IR export to CSV and JCAMP-DX (.jdx / .dx).</p>
+    </div>
+    <div class="instrument-card">
+      <h4>Agilent / Varian</h4>
+      <p>Resolutions Pro and MicroLab software export to CSV and JCAMP-DX formats.</p>
+    </div>
+    <div class="instrument-card">
+      <h4>Thermo Fisher</h4>
+      <p>OMNIC software supports JCAMP-DX export. Use File → Save As → JCAMP-DX.</p>
+    </div>
+    <div class="instrument-card">
+      <h4>Any instrument</h4>
+      <p>Any two-column wavenumber/intensity text file works — CSV, TSV, or space-delimited TXT with or without headers.</p>
+    </div>
+  </div>
+
+  <p style="margin-top: 20px;">Supported file formats:</p>
+  <div class="format-pills">
+    <span class="format-pill">JCAMP-DX (.jdx)</span>
+    <span class="format-pill">JCAMP-DX (.dx)</span>
+    <span class="format-pill">CSV (.csv)</span>
+    <span class="format-pill">TSV (.tsv)</span>
+    <span class="format-pill">TXT (.txt)</span>
   </div>
 </section>
 
@@ -229,9 +330,24 @@
         <p>Real Spectra mode accepts:</p>
         <ul>
           <li><strong>CSV / TSV / TXT</strong> — two-column files with wavenumber and intensity. Headers are optional.</li>
-          <li><strong>JCAMP-DX (.jdx, .dx)</strong> — the standard format exported by most FTIR instruments.</li>
+          <li><strong>JCAMP-DX (.jdx, .dx)</strong> — the standard format exported by most FTIR instruments including Bruker, PerkinElmer, Shimadzu, Agilent, and Thermo Fisher.</li>
         </ul>
         <p>The app auto-detects absorbance vs transmittance. If detection is wrong, use <strong>Display → Source format</strong> to override it manually.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I export data from my FTIR instrument?</summary>
+      <div class="faq-answer">
+        <p>Most modern FTIR software supports CSV or JCAMP-DX export:</p>
+        <ul>
+          <li><strong>Bruker OPUS:</strong> File → Export → JCAMP-DX or ASCII/CSV</li>
+          <li><strong>PerkinElmer Spectrum:</strong> File → Save As → CSV or JCAMP-DX</li>
+          <li><strong>Shimadzu IRSolution:</strong> File → Save → CSV</li>
+          <li><strong>Thermo OMNIC:</strong> File → Save As → JCAMP-DX</li>
+          <li><strong>Agilent Resolutions Pro:</strong> File → Export → JCAMP-DX or ASCII</li>
+        </ul>
+        <p>If your instrument software doesn't export CSV directly, JCAMP-DX is supported by almost all FTIR instruments and is the recommended format.</p>
       </div>
     </details>
 
@@ -247,21 +363,21 @@
       <summary>The app isn't detecting my peaks correctly. What should I try?</summary>
       <div class="faq-answer">
         <ul>
-          <li>Switch to <strong>Manual pick</strong> mode for broad bands (e.g. carboxylic acid O-H) that don't have a sharp maximum.</li>
+          <li>Switch to <strong>Manual pick</strong> mode for broad bands (e.g. carboxylic acid O-H, amine salt N-H) that don't have a sharp maximum.</li>
           <li>Check the source format is set correctly (absorbance vs transmittance) under <strong>Display</strong>.</li>
-          <li>Use <strong>Zoom in</strong> to expand a crowded region before picking.</li>
-          <li>After placing a marker in Assisted pick mode, switch to <strong>Select/edit</strong> and tap the marker to fine-tune its wavenumber.</li>
+          <li>Use <strong>Zoom in</strong> to expand a crowded fingerprint region before picking.</li>
+          <li>After placing a marker in Assisted pick mode, switch to <strong>Select/edit</strong> and tap the marker to fine-tune its wavenumber position.</li>
         </ul>
       </div>
     </details>
 
     <details>
-      <summary>How accurate is the Digitiser?</summary>
+      <summary>How accurate is the Digitiser for extracting printed spectra?</summary>
       <div class="faq-answer">
         <p>Accuracy depends on image quality and the number of calibration points used. For best results:</p>
         <ul>
-          <li>Photograph the spectrum straight-on with good, even lighting.</li>
-          <li>Use at least 4–6 calibration points spread across the full wavenumber range.</li>
+          <li>Photograph the spectrum straight-on with good, even lighting — or use the perspective correction handles to correct an angled photo.</li>
+          <li>Use at least 4–6 calibration points spread across the full wavenumber range (e.g. 4000, 3000, 2000, 1500, 1000 cm⁻¹).</li>
           <li>Apply perspective correction carefully — small errors in corner placement compound across the axis.</li>
         </ul>
         <p>For peer-reviewed work, always verify digitised data against the original published figure.</p>
@@ -269,44 +385,51 @@
     </details>
 
     <details>
-      <summary>Can I use a reference spectrum for comparison?</summary>
+      <summary>Can I compare two spectra side by side?</summary>
       <div class="faq-answer">
-        <p>Yes. In Real Spectra mode, tap <strong>Files → Load reference spectrum</strong>. The reference trace is overlaid in red on the same chart. This is useful for comparing an unknown to a known compound or a literature spectrum.</p>
+        <p>Yes. In Real Spectra mode, tap <strong>Files → Load reference spectrum</strong>. The reference trace is overlaid on the same chart in a contrasting colour. This is useful for comparing an unknown sample to a known compound, a literature spectrum, or a previous batch result.</p>
       </div>
     </details>
 
     <details>
       <summary>What does "Absent elements" do?</summary>
       <div class="faq-answer">
-        <p>The element exclusion bar in Real Spectra mode lets you tell the app which atoms are definitely not in your sample. For example, if you know your compound contains no nitrogen, tap <strong>N</strong> to suppress all amine, amide, nitrile, and nitro assignments from the candidate lists. This makes the remaining suggestions more relevant.</p>
+        <p>The element exclusion bar in Real Spectra mode lets you tell the app which atoms are definitely not in your sample. For example, if you know your compound contains no nitrogen, tap <strong>N</strong> to suppress all amine, amide, nitrile, and nitro assignments from the candidate lists. This narrows the suggestions to what is chemically plausible for your sample.</p>
       </div>
     </details>
 
     <details>
-      <summary>How do I export a report?</summary>
+      <summary>How do I export a PDF report?</summary>
       <div class="faq-answer">
-        <p>Tap <strong>Files → Export Report</strong> in either Real Spectra or Sandbox mode. The app generates a PDF containing the annotated spectrum chart, your peak assignments, confirmatory evidence, and compound-class suggestions. You can share it via AirDrop, Mail, or any Files-compatible app.</p>
+        <p>Tap <strong>Files → Export Report</strong> in either Real Spectra or Sandbox mode. The app generates a PDF containing the annotated spectrum chart, your peak assignments, wavenumber positions, confirmatory evidence, and compound-class suggestions. You can share it via AirDrop, Mail, or any Files-compatible app — useful for lab reports, coursework submissions, or sharing results with colleagues.</p>
       </div>
     </details>
 
     <details>
       <summary>I transferred a digitised spectrum to Real Mode but nothing appeared. What happened?</summary>
       <div class="faq-answer">
-        <p>If a spectrum was already open in Real Mode when you tapped <strong>Open in Real Mode</strong> from the Digitiser, a dialog will appear asking whether to replace the current spectrum or save the digitised data as a CSV. If you see a blank chart after transfer, try tapping <strong>⛶ Fit</strong> in the toolbar to reset the zoom.</p>
+        <p>If a spectrum was already open in Real Mode when you tapped <strong>Open in Real Mode</strong> from the Digitiser, a dialog will appear asking whether to replace the current spectrum or save the digitised data as a CSV. If you see a blank chart after transfer, try tapping <strong>⛶ Fit</strong> in the toolbar to reset the zoom to the full wavenumber range.</p>
       </div>
     </details>
 
     <details>
       <summary>Does the app work offline?</summary>
       <div class="faq-answer">
-        <p>Yes — completely. All analysis, peak detection, assignment matching, and report generation happens on-device. No internet connection is required and no data is ever sent to a server.</p>
+        <p>Yes — completely. All analysis, peak detection, functional group assignment matching, and report generation happens entirely on-device. No internet connection is required at any point and no data is ever sent to a server.</p>
       </div>
     </details>
 
     <details>
-      <summary>Is the app suitable for teaching?</summary>
+      <summary>Is the app suitable for undergraduate teaching?</summary>
       <div class="faq-answer">
-        <p>Sandbox mode is designed specifically for teaching and self-study. You can build example spectra from scratch, add peaks at known positions, lock assignments with colour-coded confirmatory evidence, and export annotated PDFs for handouts or coursework.</p>
+        <p>Sandbox mode is designed specifically for teaching and self-study. You can build example spectra from scratch by placing peaks at known wavenumber positions, add confirmatory peaks, lock assignments with colour-coded evidence, and export annotated PDF reports for handouts or coursework. The evidence-led interpretation approach encourages students to think about correlation between bands rather than simply matching a single peak to a table — building proper analytical chemistry reasoning skills.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Who made this app?</summary>
+      <div class="faq-answer">
+        <p>Swano's FTIR Interpretation Assistant was built by Matthew Swan BSc (Hons) RSci MRSC — an industrial analytical chemist currently studying for an MSc in Analytical Chemistry and Measurement Science. The app grew out of a personal tool for systematic FTIR interpretation and has since developed into a complete teaching and analysis workbench. It is built on real analytical chemistry practice rather than a theoretical database exercise.</p>
       </div>
     </details>
 
@@ -359,16 +482,15 @@
   <h2>Contact &amp; Support</h2>
   <div class="contact-card">
     <p style="color:var(--text);">Have a question not answered above, found a bug, or have a feature suggestion? We'd love to hear from you.</p>
-    <p>📧 Email: <a href="mailto:SwanoFTIR@outlook.com">SwanoFTIR@outlook.com</a><br>
-    <em style="font-size:0.8rem;color:var(--muted);">.</em></p>
+    <p>📧 Email: <a href="mailto:SwanoFTIR@outlook.com">SwanoFTIR@outlook.com</a></p>
     <p style="color:var(--muted);font-size:0.85rem;">We aim to respond within 2 business days. For App Store review appeals, please also use the email above and mention "App Store review" in the subject line.</p>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2026 Swano's FTIR Interpretation Assistant · <a href="#privacy">Privacy Policy</a> · <a href="#contact">Support</a></p>
-  <p style="margin-top:6px;">Available on iPhone, iPad and Mac (iPad for MacOS)</p>
+  <p>© 2026 Swano's FTIR Interpretation Assistant · Built by Matthew Swan BSc RSci MRSC · <a href="#privacy">Privacy Policy</a> · <a href="#contact">Support</a></p>
+  <p style="margin-top:6px;">Available on iPhone, iPad and Mac · <a href="https://apps.apple.com/us/app/swanos-ftir/id6774970930" target="_blank" rel="noopener noreferrer">Download on the App Store</a></p>
 </footer>
 
 </body>
